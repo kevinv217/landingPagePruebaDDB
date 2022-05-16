@@ -9,6 +9,7 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
   let numberDocument = document.getElementById("lpNumberDocument").value;
   let phone = document.getElementById("lpPhone").value;
   let verify = document.getElementById("lpCheck").checked;
+  let resetear = document.querySelector("#formulario").reset();
 
   let valorSeleccionado =
     typeDocument.options[typeDocument.selectedIndex].value;
@@ -27,7 +28,10 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     verificado: ${verifyCheck}
     `;
 
-  console.log(newdatos);
+  // console.log(newdatos);
 
-  return alert(newdatos);
+  if (newdatos) {
+    resetear;
+    return alert(newdatos);
+  }
 });
