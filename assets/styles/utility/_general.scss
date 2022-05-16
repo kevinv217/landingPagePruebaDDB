@@ -1,0 +1,61 @@
+h4 {
+  font-family: $tipografia1;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-right: 10px;
+  // border-right: 1px solid $bordercolorfour;
+}
+
+pre {
+  font-family: $tipografia1;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right: 10px;
+  font-weight: 700;
+  margin: 0;
+  // border-right: 1px solid $bordercolorfour;
+}
+
+a {
+  font-family: $tipografia1;
+}
+
+span {
+  font-family: $tipografia1;
+  color: $textcolorsecundary;
+}
+
+label{
+  font-size: 20px;
+}
+
+p {
+  font-family: $tipografia1;
+  color: $textcolorsecundary;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  background-color: $colorfondotertiary !important;
+  color: $textcolorprimary !important;
+  border-radius: 0 !important;
+}
+
+input::placeholder {
+  font-family: $tipografia1;
+  text-transform: uppercase;
+}
+
+select {
+  background-color: $colorfondotertiary !important;
+  background-image: url("/assets/images/arrow.png") !important;
+  background-size: 10px 10px !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  color: $textcolorfour !important;
+  option {    
+    text-transform: uppercase !important;
+  }
+}

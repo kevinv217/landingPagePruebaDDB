@@ -1,0 +1,18 @@
+@mixin lpFontLoad($name, $file, $weight, $style) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("/assets/fonts/#{$file}.woff") format("woff"),
+      url("/assets/fonts/#{$file}.ttf") format("truetype"),
+      url("/assets/fonts/#{$file}.svg##{$name}") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include lpFontLoad(Roboto-Light, Roboto-Light, normal, normal);
+@include lpFontLoad(Roboto-Bold, Roboto-Bold, normal, normal);
+// @include lpFontLoad(Poppins-ExtraBold, Poppins-ExtraBold, normal, normal);
+
+$tipografia1: "Roboto-Light";
+$tipografia2: "Roboto-Bold";
+// $tipografia3: "Poppins-ExtraBold";

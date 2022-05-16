@@ -1,0 +1,24 @@
+.viewFooter {
+  background-color: $colorfondoprimary;
+  display: flex;
+  @include phone {
+    justify-content: center;
+  }
+  @include extra-min-phone {
+    justify-content: center;
+  }
+  @include super-min-phone {
+    justify-content: center;
+  }
+
+  span {
+    @include extra-min-phone {
+      padding: 0 !important;
+      text-align: center;
+    }
+    @include super-min-phone {
+      padding: 0 !important;
+      text-align: center;
+    }
+  }
+}

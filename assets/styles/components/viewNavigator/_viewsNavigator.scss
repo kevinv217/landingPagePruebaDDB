@@ -1,0 +1,153 @@
+@import "../../utility/colors/";
+@import "../../utility/tipografia";
+@import "../../utility/variables";
+
+.viewNavigator {
+  position: fixed;
+  z-index: 2000;
+  background-color: $colorfondoprimary;
+  @include phone {
+    justify-content: center;
+  }
+  @include extra-min-phone {
+    justify-content: center;
+  }
+  @include super-min-phone {
+    justify-content: center;
+  }
+
+  .row {
+    .childNavigator {
+      border-bottom: 0.2px solid $bordercolortertiary;
+      .row {
+        // div {
+        //   padding: 10px 0;
+        // }
+
+        div:first-child {
+          align-items: center;
+          border-bottom: 4px solid $bordercolorprimary;
+          @include tablet {
+            justify-content: space-between;
+            padding: 20px 0 !important;
+            width: 100%;
+          }
+          @include phone {
+            justify-content: space-between;
+            padding: 20px 0 !important;
+          }
+          @include extra-min-phone {
+            justify-content: space-between;
+            padding: 20px 0 !important;
+          }
+          @include super-min-phone {
+            justify-content: space-between;
+            padding: 20px 0 !important;
+          }
+
+          a {
+            img {
+              padding-top: 20px;
+              @include desktop {
+                width: 100%;
+                padding: 0 !important;
+              }
+              @include tablet {
+                width: 100%;
+                padding: 0 !important;
+              }
+              @include phone {
+                width: 100%;
+                padding: 0;
+              }
+              @include extra-min-phone {
+                width: 100%;
+                padding: 0;
+              }
+              @include super-min-phone {
+                width: 100%;
+                padding: 0;
+              }
+            }
+          }
+
+          button {
+            border: 1px solid white;
+            i {
+              color: $textcolorsecundary;
+            }
+          }
+        }
+
+        div:last-child {
+          justify-content: center;
+          align-items: center;
+
+          ul:first-child {
+            justify-content: space-around;
+            width: 100%;
+            li {
+              padding: 20px 0 !important;
+              border-bottom: 2px solid transparent;
+              a {
+                color: $textcolorsecundary;
+                font-family: $tipografia1;
+                text-transform: uppercase;
+                @include desktop {
+                  font-size: 15px;
+                }
+                @include tablet {
+                  text-align: center;
+                  padding: 0;
+                }
+                @include phone {
+                  text-align: center;
+                  padding: 0;
+                }
+                @include extra-min-phone {
+                  text-align: center;
+                  padding: 0;
+                }
+                @include super-min-phone {
+                  text-align: center;
+                  padding: 0;
+                }
+              }
+            }
+
+            li:hover {
+              color: $textcolortertiary;
+              border-bottom: 2px solid $bordercolorprimary;
+              transition: all ease 0.3s;
+            }
+          }
+
+          ul:last-child {
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            @include tablet {
+              justify-content: space-around;
+            }
+            @include phone {
+              justify-content: space-around;
+            }
+            @include extra-min-phone {
+              justify-content: space-around;
+            }
+            @include super-min-phone {
+              justify-content: space-around;
+            }
+
+            li {
+              a {
+                color: $textcolorsecundary;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

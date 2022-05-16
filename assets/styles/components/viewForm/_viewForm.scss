@@ -1,0 +1,95 @@
+.viewForm {
+  position: relative;
+  .linea {
+    position: absolute;
+    top: 12px;
+    border-top: 0.2px solid $bordercolorprimary;
+    width: 100%;
+    @include tablet {
+      top: 11px;
+    }
+    @include phone {
+      top: 10px;
+    }
+    @include extra-min-phone {
+     top: 8px;
+    }
+  }
+
+  .row {
+    div {
+      z-index: 20;
+      div {
+        h4 {
+          letter-spacing: 5px;
+          @include phone {
+            letter-spacing: 2px;
+          }
+          @include extra-min-phone {
+            letter-spacing: 0;
+            font-size: 15px;
+          }
+        }
+
+        span {
+          color: $textcolorprimary;
+        }
+      }
+
+      form {
+        div {
+          @include tablet {
+            padding: 0 3px;
+          }
+          @include phone {
+            padding: 0;
+          }
+          @include extra-min-phone {
+            padding: 0;
+          }
+          @include super-min-phone {
+            padding: 0;
+          }
+        }
+
+        div:nth-child(6) {
+          @include tablet {
+            padding: 0 5px !important;
+          }
+          @include phone {
+            justify-content: center;
+          }
+          @include extra-min-phone {
+            justify-content: center;
+          }
+
+          label {
+            @include desktop {
+              font-size: 15px;
+            }
+            @include tablet {
+              font-size: 12px;
+            }
+            @include extra-min-phone {
+             font-size: 15px;
+            }
+          }
+        }
+        div:last-child {
+          display: flex;
+          justify-content: center;
+
+          button {
+            @include desktop {
+              padding: 5px 8px;
+            }
+            @include tablet {
+              padding: 5px;
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
